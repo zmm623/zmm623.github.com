@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>娟娟</title>
-</head>
+<!-- saved from url=(0031)http://zmm623.github.io/lj.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<body>
+<title>娟娟</title>
+
+
+<body style="background-color: rgb(0, 0, 0);">
 
 <script type="text/javascript">
 BLUR = false;
 
 PULSATION = true;
-PULSATION_PERIOD = 600;
-PARTICLE_RADIUS = 4;
+PULSATION_PERIOD = 8000;
+PARTICLE_RADIUS = 3;
 
 /* disable blur before using blink */
 
@@ -20,7 +20,7 @@ BLINK = false;
 
 GLOBAL_PULSATION = false;
 
-QUALITY = 2; /* 0 - 5 */
+QUALITY =2; /* 0 - 5 */
 
 /* set false if you prefer rectangles */
 ARC = true;
@@ -28,7 +28,7 @@ ARC = true;
 /* trembling + blur = fun */
 TREMBLING = 0; /* 0 - infinity */
 
-FANCY_FONT = "Arial";
+FANCY_FONT = "YaHei";
 
 BACKGROUND = "#000";
 
@@ -37,7 +37,7 @@ BLENDING = true;
 /* if empty the text will be a random number */
 var TEXT;
 num = 0;
-TEXTArray = [ "深爱", "娟娟", "直到", "永远"];
+TEXTArray = [ "张明", "深爱", "娟娟", "直到", "永远"];
 
 QUALITY_TO_FONT_SIZE = [10, 12, 40, 50, 100, 350];
 QUALITY_TO_SCALE = [20, 6, 4, 2, 0.9, 0.5];
@@ -93,9 +93,9 @@ window.onload = function () {
 			num++;
 		} else {
 			num = 0;
-            times++;
-            if(times==2)
-            window.location.href="rose.html"; 
+            //times++;
+            //if(times==2)
+            //window.location.href="rose.html"; 
 		}
 		//alert(TEXT);
 
@@ -103,7 +103,7 @@ window.onload = function () {
 		tctx.fillRect(0, 0, W, H)
 		//tctx.fill();
 
-		tctx.font = "bold " + QUALITY_TO_FONT_SIZE[QUALITY] + "px " + FANCY_FONT;
+		tctx.font = "bold " +40+ "px " + FANCY_FONT;
 
 		//tctx.textAlign='center';//文本水平对齐方式
 		//tctx.textBaseline='middle';
@@ -218,7 +218,7 @@ window.onload = function () {
 	function init() {
 		new_positions();
 		setInterval(draw, 30);
-		setInterval(new_positions, 3000);
+		setInterval(new_positions, 3500);
 	}
 
 	init();
@@ -242,5 +242,6 @@ canvas {
 </style>
 
 <canvas id="canvas" width="1000" height="800"></canvas>
-</body>
-</html>
+
+
+<div id="qq-sendUrl-btn"></div></body></html>
